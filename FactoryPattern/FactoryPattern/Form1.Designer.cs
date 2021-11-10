@@ -37,6 +37,9 @@ namespace FactoryPattern
             this.btnSelectBall = new System.Windows.Forms.Button();
             this.lblNext = new System.Windows.Forms.Label();
             this.btnColor = new System.Windows.Forms.Button();
+            this.btnSelectPresent = new System.Windows.Forms.Button();
+            this.btnColor2 = new System.Windows.Forms.Button();
+            this.btnColor3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -70,7 +73,7 @@ namespace FactoryPattern
             // 
             // btnSelectBall
             // 
-            this.btnSelectBall.Location = new System.Drawing.Point(12, 180);
+            this.btnSelectBall.Location = new System.Drawing.Point(117, 118);
             this.btnSelectBall.Name = "btnSelectBall";
             this.btnSelectBall.Size = new System.Drawing.Size(98, 46);
             this.btnSelectBall.TabIndex = 2;
@@ -81,7 +84,7 @@ namespace FactoryPattern
             // lblNext
             // 
             this.lblNext.AutoSize = true;
-            this.lblNext.Location = new System.Drawing.Point(134, 118);
+            this.lblNext.Location = new System.Drawing.Point(325, 118);
             this.lblNext.Name = "lblNext";
             this.lblNext.Size = new System.Drawing.Size(89, 17);
             this.lblNext.TabIndex = 3;
@@ -90,18 +93,51 @@ namespace FactoryPattern
             // btnColor
             // 
             this.btnColor.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnColor.Location = new System.Drawing.Point(271, 119);
+            this.btnColor.Location = new System.Drawing.Point(117, 170);
             this.btnColor.Name = "btnColor";
-            this.btnColor.Size = new System.Drawing.Size(73, 45);
+            this.btnColor.Size = new System.Drawing.Size(98, 46);
             this.btnColor.TabIndex = 4;
             this.btnColor.UseVisualStyleBackColor = false;
             this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            // 
+            // btnSelectPresent
+            // 
+            this.btnSelectPresent.Location = new System.Drawing.Point(221, 118);
+            this.btnSelectPresent.Name = "btnSelectPresent";
+            this.btnSelectPresent.Size = new System.Drawing.Size(98, 46);
+            this.btnSelectPresent.TabIndex = 5;
+            this.btnSelectPresent.Text = "PRESENT";
+            this.btnSelectPresent.UseVisualStyleBackColor = true;
+            this.btnSelectPresent.Click += new System.EventHandler(this.btnSelectPresent_Click);
+            // 
+            // btnColor2
+            // 
+            this.btnColor2.BackColor = System.Drawing.Color.Fuchsia;
+            this.btnColor2.Location = new System.Drawing.Point(221, 170);
+            this.btnColor2.Name = "btnColor2";
+            this.btnColor2.Size = new System.Drawing.Size(98, 46);
+            this.btnColor2.TabIndex = 6;
+            this.btnColor2.UseVisualStyleBackColor = false;
+            this.btnColor2.Click += new System.EventHandler(this.btnColor_Click);
+            // 
+            // btnColor3
+            // 
+            this.btnColor3.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnColor3.Location = new System.Drawing.Point(221, 222);
+            this.btnColor3.Name = "btnColor3";
+            this.btnColor3.Size = new System.Drawing.Size(98, 46);
+            this.btnColor3.TabIndex = 7;
+            this.btnColor3.UseVisualStyleBackColor = false;
+            this.btnColor3.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 249);
+            this.ClientSize = new System.Drawing.Size(800, 377);
+            this.Controls.Add(this.btnColor3);
+            this.Controls.Add(this.btnColor2);
+            this.Controls.Add(this.btnSelectPresent);
             this.Controls.Add(this.btnColor);
             this.Controls.Add(this.lblNext);
             this.Controls.Add(this.btnSelectBall);
@@ -123,6 +159,9 @@ namespace FactoryPattern
         private System.Windows.Forms.Button btnSelectBall;
         private System.Windows.Forms.Label lblNext;
         private System.Windows.Forms.Button btnColor;
+        private System.Windows.Forms.Button btnSelectPresent;
+        private System.Windows.Forms.Button btnColor2;
+        private System.Windows.Forms.Button btnColor3;
     }
 }
 
