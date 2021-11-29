@@ -41,34 +41,41 @@ namespace MicroSim
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 37);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 58);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(956, 384);
+            this.richTextBox1.Size = new System.Drawing.Size(956, 363);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(83, 9);
+            this.numericUpDown1.Location = new System.Drawing.Point(91, 13);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(62, 22);
+            this.numericUpDown1.Size = new System.Drawing.Size(104, 22);
             this.numericUpDown1.TabIndex = 1;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(722, 7);
+            this.button1.Location = new System.Drawing.Point(722, 11);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 26);
+            this.button1.Size = new System.Drawing.Size(120, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "Browse";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 3;
@@ -78,7 +85,7 @@ namespace MicroSim
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(276, 8);
+            this.label2.Location = new System.Drawing.Point(263, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 4;
@@ -86,7 +93,7 @@ namespace MicroSim
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(406, 9);
+            this.textBox1.Location = new System.Drawing.Point(406, 13);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(310, 22);
             this.textBox1.TabIndex = 5;
@@ -94,12 +101,13 @@ namespace MicroSim
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(848, 8);
+            this.button2.Location = new System.Drawing.Point(848, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 26);
+            this.button2.Size = new System.Drawing.Size(120, 31);
             this.button2.TabIndex = 6;
             this.button2.Text = "Start";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
